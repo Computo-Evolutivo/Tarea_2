@@ -1,11 +1,17 @@
+import os
+
+RELATIVE_PATH = "src/Files/"
+
+
 def in_range(row, column, ady):
     print(column < len(ady[row]))
     return column < len(ady[row])
 
 
 def leer(file_path):
+    file_path = RELATIVE_PATH + file_path
     adyacencias = 0
-    vertices = 0
+    aristas_dados = 0
     try:
         with open(file_path, "r") as file:
             for line in file:
@@ -25,6 +31,10 @@ def leer(file_path):
                         # Haremos un  arreglo escalonado para este problema
                         adyacencias = [[False for _ in range(column + 1)] for column in range(vertices)]
                     case 'e':
+                        aristas_dados += 1
+                        if aristas_dados > aristas:
+                            print("ERROR: Número de aristas dados mayor al número de aristas indicados")
+                            return None
                         vert_init = int(line[1]) - 1
                         vert_fin = int(line[2]) - 1
                         ''''
