@@ -1,0 +1,68 @@
+Representación de mátriz de adyacencias:
+1 | [False] 
+2 | [True] [False] 
+3 | [False] [True] [False] 
+4 | [True] [True] [True] [False] 
+5 | [True] [False] [True] [True] [False] 
+       1       2       3       4       5    
+
+Solución inicial (aleatoria):
+Color del vértice 1: 2
+Color del vértice 2: 3
+Color del vértice 3: 3
+Color del vértice 4: 2
+Color del vértice 5: 2
+
+Errores en solución inicial:
+8
+--------------
+Iniciamos búsqueda de solución
+
+
+Solución actual:
+Color del vértice 1: 2
+Color del vértice 2: 3
+Color del vértice 3: 3
+Color del vértice 4: 2
+Color del vértice 5: 2
+
+Errores en solución actual: 8
+Cambiando color de vértice 1 de 2 a 1
+-----------
+Solución actual:
+Color del vértice 1: 1
+Color del vértice 2: 3
+Color del vértice 3: 3
+Color del vértice 4: 2
+Color del vértice 5: 2
+
+Errores en solución actual: 4
+Cambiando color de vértice 2 de 3 a 4
+-----------
+Solución actual:
+Color del vértice 1: 1
+Color del vértice 2: 4
+Color del vértice 3: 3
+Color del vértice 4: 2
+Color del vértice 5: 2
+
+Errores en solución actual: 2
+-----------
+Solución actual:
+Color del vértice 1: 1
+Color del vértice 2: 4
+Color del vértice 3: 3
+Color del vértice 4: 2
+Color del vértice 5: 2
+
+Errores en solución actual: 2
+Cambiando color de vértice 4 de 2 a 5
+-----------
+Solución actual:
+Color del vértice 1: 1
+Color del vértice 2: 4
+Color del vértice 3: 3
+Color del vértice 4: 5
+Color del vértice 5: 2
+
+Errores en solución actual: 0

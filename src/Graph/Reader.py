@@ -1,10 +1,10 @@
 import os
 
 RELATIVE_PATH = "src/Files/"
+WRITING_PATH = "output/"
 
 
 def in_range(row, column, ady):
-    print(column < len(ady[row]))
     return column < len(ady[row])
 
 
@@ -15,7 +15,6 @@ def leer(file_path):
     try:
         with open(file_path, "r") as file:
             for line in file:
-                print(line)
                 line = line.split()
                 match line[0]:
                     case 'c':
@@ -62,4 +61,10 @@ def print_adjacency_matrix(adj):
     rep += "    "
     for col in range(len(adj[row])):
         rep += "   " + str(col+1) + "    "
-    print(rep)
+    return rep
+
+
+def write_output(file, info):
+    file = WRITING_PATH + file
+    with open(file, "w") as output:
+        output.write(info)
