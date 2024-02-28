@@ -28,6 +28,8 @@ Si estamos en el directorio `src/Graph`
 Esto no generará ningún output en terminal(a menos que haya errores de ejecución) para verificar el output debemos ir al directorio `src/output` y abrir el 
 archivo `coloring_output.txt`
 
+(El archivo de prueba dado se llama `graph1.col`, se puede modificar o crear otro archivo para probar otra gráfica)
+
 
 ##Para Codify
 

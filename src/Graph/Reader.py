@@ -51,6 +51,7 @@ def leer(file_path):
         return None
 
 
+# Función que formatea la gráfica de adyacencias de forma legible :3
 def print_adjacency_matrix(adj):
     rep = ""
     for row in range(len(adj)):
@@ -64,6 +65,7 @@ def print_adjacency_matrix(adj):
     return rep
 
 
+#Guardamos el output en el archivo predeterminado
 def write_output(file, info):
     file = WRITING_PATH + file
     with open(file, "w") as output:

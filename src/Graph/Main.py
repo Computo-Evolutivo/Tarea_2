@@ -6,6 +6,7 @@ if __name__ == '__main__':
     if len(sys.argv) != 2:
         print("Error: número de argumentos de entrada inválidos")
     else:
+        # Rutina que genera la matriz de adyacencias, crea una solución aleatoria inicial y resuelve el problema.
         output = "Representación de mátriz de adyacencias:\n"
         matriz = leer(sys.argv[1])
         output += print_adjacency_matrix(matriz) + "\n\n"
