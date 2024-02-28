@@ -45,6 +45,7 @@ Tenemos 4 archivos `codificador.py`, `decodificador.py`, `codificador_vectores.p
 
 Este script se ejecuta desde terminal de la siguiente manera (en el mismo directorio que esté el archivo):
 >python3 codificador.py x nBits vmin vmax
+
 donde:
 x representa el número que se va a codificar, puede ser en el siguiente formato
 nBits es el número de bits 
@@ -58,6 +59,7 @@ ejemplo:
 
 Este script se ejecuta desde terminal de la siguiente manera (en el mismo directorio que esté el archivo):
 >python3 decodificador.py x nBits vmin vmax
+
 donde:
 x representa el número binario que se va a decodificar
 nBits es el número de bits 
@@ -71,6 +73,7 @@ ejemplo:
 
 Este script se ejecuta desde terminal de la siguiente manera (en el mismo directorio que esté el archivo):
 >python3 codificador_vectores.py nBits, vmin, vmax, x
+
 donde:
 nBits es el número de bits
 vmin es a, extremo inferior del intervalo
@@ -84,6 +87,7 @@ ejemplo:
 
 Este script se ejecuta desde terminal de la siguiente manera (en el mismo directorio que esté el archivo):
 >python3 decodificador_vectores.py nBits, vmin, vmax, x
+
 donde:
 nBits es el número de bits
 vmin es a, extremo inferior del intervalo
